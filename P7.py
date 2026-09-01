@@ -1,0 +1,6 @@
+integers = list(map(int, input("Enter 3 integers: ").split()))
+print(f"Max = {max(integers)}")
+integers.remove(max(integers))
+print(f"Middle = {max(integers)}")
+integers.remove(max(integers))
+print(f"Min = {max(integers)}")
