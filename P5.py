@@ -1,5 +1,7 @@
-submit = int(input("How many hours do you submit late? "))
-score = int(input("What is your estimated score? "))
+submit = float(input("How many hours do you submit late? "))
+print()
+score = float(input("What is your estimated score? "))
+
 if submit <= 0:
     deduction = 0
 elif submit <= 24:
@@ -9,8 +11,11 @@ elif submit <= 48:
 else:
     deduction = 100
 
-
-
 expected_score = score * (1 - deduction / 100)
 
-print(f"Your final score is {expected_score:.1f}.")
+if expected_score == 0:
+    print(f"Your expected score is {int(expected_score)}")
+else:
+    print(f"Your expected score is {expected_score:.1f}")
+
+#Finished

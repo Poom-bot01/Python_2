@@ -10,3 +10,5 @@ elif (weight <= 10):
 elif (weight >= 11):
     weight_total = 5 * 20 + 5 * 30 + (weight - 10) * 40
     print(f"Total delivery cost is {weight_total:.2f} Baht")
+
+#Finished
